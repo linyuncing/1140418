@@ -90,14 +90,14 @@
 </head>
 <body>
   <ul class="menu" id="menu">
-    <li><a href="#" onclick="hideIframe()">首頁</a></li>
+    <li><a href="#" onclick="goToHomepage()">首頁</a></li>
     <li><a href="#" onclick="showIframe('Pink Kawaii cute table cloth hand drawn organic scrapbook YouTube Intro.png')">自我介紹</a></li>
     <li>
       <a href="#">作品集</a>
       <ul class="submenu">
         <li><a href="#" onclick="showIframe('https://linyuncing.github.io/20250314/')">第一周</a></li>
         <li><a href="#" onclick="showIframe('https://linyuncing.github.io/20250328/')">第二周</a></li>
-        <li><a href="#" onclick="showIframe('https:https://www.tku.edu.tw/')">第三周</a></li>
+        <li><a href="#" onclick="showIframe('https://linyuncing.github.io/0307/')">第三周</a></li>
         <li><a href="#" onclick="showIframe('https://www.et.tku.edu.tw/')">第四周</a></li>
       </ul>
     </li>
@@ -106,6 +106,10 @@
   </ul>
   <iframe id="contentFrame"></iframe>
   <script>
+    function goToHomepage() {
+  window.location.href = 'https://linyuncing.github.io/20250425/';
+}
+
     let circles = [];
     const numCircles = 40;
     const colors = ['#fde4cf', '#ffcfd2', '#f1c0e8', '#cfbaf0', '#a3c4f3', '#90dbf4', '#8eecf5', '#98f5e1', '#b9fbc0'];
